@@ -37,13 +37,13 @@ List * createList()
   return list;
 }
 
-void * firstList(List * list) {
-  if(list == NULL || list->head == NULL)
-    return NULL;
+void * firstList(List * list) 
+{
   list->current = list->head;
 }
 
-void * nextList(List * list) {
+void * nextList(List * list) 
+{
   list->current = list->current->next;
 }
 
