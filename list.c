@@ -52,16 +52,17 @@ void * nextList(List * list) {
 }
 
 void * lastList(List * list) {
-  if(list == NULL || list->head == NULL)
-    return NULL;
-  list->current = list->head;
+  if(list == NULL || list->head == NULL)return NULL;
   while(list->current->next != NULL)
     list->current =  list->current->next;
   return list->current->data;
 }
 
 void * prevList(List * list) {
+  if(list == NULL || list->current == NULL || list->current->prev == NULL)
     return NULL;
+  list->current = list->current->prev;
+  return list->current->data; 
 }
 
 void pushFront(List * list, void * data) {
