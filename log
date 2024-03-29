@@ -236,3 +236,8 @@ list.c:118:1: error: control reaches end of non-void function [-Werror=return-ty
 cc1: all warnings being treated as errors
 Compilation failed
 44525eb
+Fri 29 Mar 2024 11:02:43 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  0|0
+6e11f6e

@@ -114,8 +114,13 @@ void * popCurrent(List * list)
     left = left->next;
   left->next = right;
   free(list->current);
+  return list->current;
+  list->current=NULL;
   
 }
+
+  
+
 
 void cleanList(List * list) {
     while (list->head != NULL) {
