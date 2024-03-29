@@ -108,12 +108,17 @@ void * popBack(List * list) {
 
 void * popCurrent(List * list) 
 {
-
   Node *left = list->current->prev;   
   Node *right = list->current->next;
+  if(left != NULL)
+    left->next = right;
+  else
+    list->head = right;
+  if(right != NULL)
+    right->prev = left;
+  else
+    list->tail = left;
   
-  left->next = right;
-  right->prev = left;
   
   void *dato = list->current->data;
   free(list->current);
