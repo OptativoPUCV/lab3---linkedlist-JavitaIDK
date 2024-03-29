@@ -186,3 +186,8 @@ list.c:87:9: error: unused variable ‘newNode’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 3e04a64
+Fri 29 Mar 2024 10:02:14 PM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  0|0
+6be2a0c
