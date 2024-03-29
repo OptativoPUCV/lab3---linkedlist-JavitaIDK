@@ -175,3 +175,14 @@ Fri 29 Mar 2024 09:57:07 PM UTC:
  1 file changed, 6 insertions(+), 3 deletions(-)
  tests:  0|0
 a71715a
+Fri 29 Mar 2024 10:01:59 PM UTC: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushBack’:
+list.c:87:9: error: unused variable ‘newNode’ [-Werror=unused-variable]
+   87 |   Node *newNode = createNode(data);
+      |         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3e04a64
