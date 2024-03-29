@@ -117,11 +117,14 @@ void * popCurrent(List * list)
     }
     
   Node *right = list->current->next;
-  
   left->next = right;
+  
+  void *dato = list->current->data;
   free(list->current);
-  return list->current;
   list->current=NULL;
+  
+  return dato;
+  
   
 }
 
