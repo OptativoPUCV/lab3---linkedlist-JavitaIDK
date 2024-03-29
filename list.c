@@ -106,7 +106,8 @@ void * popBack(List * list) {
     return popCurrent(list);
 }
 
-void * popCurrent(List * list) {
+void * popCurrent(List * list) 
+{
   Node *left = list->head;
   Node *right = list->current->next;
   while(left->next != list->current)
