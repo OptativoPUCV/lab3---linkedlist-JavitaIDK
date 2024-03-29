@@ -110,8 +110,9 @@ void * popCurrent(List * list)
 {
   if(list->current == NULL)
     return NULL;
-  Node *left = list->head;
-  while(left->next != list->current)
+  
+  Node *left = list->current->head;
+  while (left->next != list->current)
     {
       left = left->next;
     }
@@ -124,8 +125,6 @@ void * popCurrent(List * list)
   list->current=NULL;
   
   return dato;
-  
-  
 }
 
   
